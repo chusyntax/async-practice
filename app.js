@@ -33,3 +33,17 @@ function step3(error, script) {
     // ...continue after all scripts are loaded (*)
   }
 }
+
+
+//Async/ Await with Fetch
+
+async function fetchData(){
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+
+    const data = await res.json();
+
+    console.log(data)
+
+}
+
+fetchData()
